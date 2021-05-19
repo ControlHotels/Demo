@@ -51,6 +51,12 @@ pipeline {
             }
         }
 		
+		stage('Release') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
 		
 		stage('Measure Validate') {
             steps {			
