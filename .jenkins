@@ -1,16 +1,46 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Read Parameters') {
             steps {			
                     echo "Multiline shell steps works too"
             }
         }
 		
-		stage('Build1') {
+		stage('CkeckOut SCM') {
             steps {			
                     echo "Multiline shell steps works too"
             }
         }
+		
+		
+		stage('Build') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
+		stage('Sonar Qube Analisys') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
+		stage('Save Artifacts') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
+		stage('Artifact Deploy') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
+		
+		
+		
+		
     }
 }
