@@ -1,13 +1,12 @@
 pipeline {
     agent any
-    stages {
+    stages 	{
         stage('Build') {
-            steps {
-			
-                    echo "Multiline shell steps works too"
-                
-                '''
-            }
-        }
-    }
-}
+            steps 			{			
+                   echo "Multiline shell steps works too"
+               
+           
+							}
+						}
+			}
+		}
