@@ -7,6 +7,13 @@ pipeline {
             }
         }
 		
+		stage('Version Control') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
+		
 		stage('CkeckOut SCM') {
             steps {			
                     echo "Multiline shell steps works too"
@@ -26,6 +33,12 @@ pipeline {
             }
         }
 		
+		stage('Unit Test') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
+		
 		stage('Save Artifacts') {
             steps {			
                     echo "Multiline shell steps works too"
@@ -39,6 +52,11 @@ pipeline {
         }
 		
 		
+		stage('Measure Validate') {
+            steps {			
+                    echo "Multiline shell steps works too"
+            }
+        }
 		
 		
 		
