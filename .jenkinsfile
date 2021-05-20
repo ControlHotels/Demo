@@ -6,7 +6,7 @@ def username = 'Jenkins'
 
  pipeline {
     agent {
-            node()
+            node('Java')
           }
     stages {
         stage('Read Parameters') {
