@@ -8,11 +8,6 @@ def dirJavaHome = tool 'JDK11'
     agent {
             node('')
           }
-    tools{
-            maven 'M2-3.6.3'
-            jdk 'JDK11'
-            oc 'oc-46'
-         }
     stages {
         stage('Read Parameters') {
             steps {		
