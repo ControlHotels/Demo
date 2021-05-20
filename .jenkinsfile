@@ -1,10 +1,4 @@
-node{
-deployMain()
+node {
+    checkout scm 
+    /* .. snip .. */
 }
-		
-		
-		
-
-
-
-
