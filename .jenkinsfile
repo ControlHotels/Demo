@@ -11,10 +11,10 @@ def username = 'Andres Viña'
     stages {
         stage('Read Parameters') {
             steps {		
-                 echo "Init CheckOut Source Code"
-                 checkout scm
+                checkout scm
+                 echo "Init CheckOut Source Code"                
                  echo "Proyecto desarrollado por. ${username}"
-                 echo "Java: ${JAVA_HOME}"
+                // echo "Java: ${JAVA_HOME}"
 
 
             }
