@@ -5,13 +5,14 @@ def doublyQuoted = "World"
 def username = 'Jenkins'
 
  pipeline {
-    agent any
+    agent {
+            node()
+          }
     stages {
         stage('Read Parameters') {
             steps {		
 
-                 echo 'Hello Mr. ${username}'
-                 echo "I said, Hello Mr. ${username}"
+                 echo "Hola, Señor. ${username}"
             }
         }
 		
