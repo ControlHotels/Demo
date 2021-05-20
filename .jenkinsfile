@@ -6,8 +6,8 @@
  {
     agent  {
         node () {
-    }
-        stages {
+
+       stages {
             stage('Read Parameters') {
                 steps {		
 
@@ -70,6 +70,12 @@
                 steps {			
                         echo "Multiline shell steps works too"
                 }
-            }	
+            }
+
+
+
+
+    }
+ 	
     }
 }
