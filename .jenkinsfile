@@ -1,10 +1,6 @@
-def pipeline
-node() {
-        stage("One"){
-
-            echo 'hello'
-
-             pipeline = load 'pipeline.groovy'
-                pipeline.pipelineMethod()
-        }
-}
+    def pipeline
+    node() {
+        pipeline = load 'pipeline.groovy'
+        pipeline.functionA()
+    }
+    pipeline.functionB()
