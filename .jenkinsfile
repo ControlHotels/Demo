@@ -1,13 +1,17 @@
 /*Variables del proceso*/
  
- def dirJavaHome 
+def singlyQuoted = 'Hello'
+def doublyQuoted = "World"
+def username = 'Jenkins'
+
  pipeline {
     agent any
     stages {
         stage('Read Parameters') {
             steps {		
 
-                    echo "Multiline shell steps works too"
+                 echo 'Hello Mr. ${username}'
+                 echo "I said, Hello Mr. ${username}"
             }
         }
 		
