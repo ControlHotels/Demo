@@ -11,7 +11,8 @@ def username = 'Andres Viña'
     stages {
         stage('Read Parameters') {
             steps {		
-
+                 echo "Init CheckOut Source Code"
+                 checkout scm
                  echo "Proyecto desarrollado por. ${username}"
                  echo "Java: ${JAVA_HOME}"
 
