@@ -1,18 +1,9 @@
-pipeline {
-    agent any
-    stages {
-       
-		
-      
-	node{
-    deployMain()
-	}
-		
-		
-		
-    }
+node{
+deployMain()
 }
-
+		
+		
+		
 
 
 
