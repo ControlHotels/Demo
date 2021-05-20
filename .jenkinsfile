@@ -2,7 +2,7 @@
  
 def singlyQuoted = 'Hello'
 def doublyQuoted = "World"
-def username = 'Jenkins'
+def username = 'Andres Viña'
 
  pipeline {
     agent {
@@ -12,7 +12,10 @@ def username = 'Jenkins'
         stage('Read Parameters') {
             steps {		
 
-                 echo "Hola, Señor. ${username}"
+                 echo "Proyecto desarrollado por. ${username}"
+                 echo "Java: ${JAVA_HOME}"
+
+
             }
         }
 		
