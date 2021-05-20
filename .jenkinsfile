@@ -5,6 +5,6 @@ node() {
             echo 'hello'
 
              pipeline = load 'pipeline.groovy'
-                pipeline.functionA()
+                pipeline.pipelineMethod()
         }
 }
