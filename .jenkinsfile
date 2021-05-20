@@ -3,7 +3,6 @@
 def singlyQuoted = 'Hello'
 def doublyQuoted = "World"
 def username = 'Andres Viña'
-def dirJavaHome = tool 'JDK11'
  pipeline {
     agent {
             node('')
