@@ -1,6 +1,12 @@
 #!/usr/bin/env groovy
 def call(){
-  node{
+node {
+  stage('HelloWorld') {
+    echo 'Hello World'
+  }
 
-      }
+  stage('git clone') {
+    git clone "ssh://git@mywebsite.com/myrepo.git"
+  }
+}
 }
