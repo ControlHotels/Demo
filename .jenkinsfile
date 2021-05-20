@@ -3,11 +3,16 @@
 def singlyQuoted = 'Hello'
 def doublyQuoted = "World"
 def username = 'Andres Viña'
-
+def dirJavaHome = tool 'JDK11'
  pipeline {
     agent {
             node('')
           }
+    tools{
+            maven 'M2-3.6.3'
+            jdk 'JDK11'
+            oc 'oc-46'
+         }
     stages {
         stage('Read Parameters') {
             steps {		
@@ -15,6 +20,7 @@ def username = 'Andres Viña'
                  echo "Init CheckOut Source Code"                
                  echo "Proyecto desarrollado por. ${username}"
                  script {	
+                    
                     echo "Java: ${JAVA_HOME}"
 
                 }
